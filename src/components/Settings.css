@@ -1,0 +1,128 @@
+.settingsPage {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #e9ecef;
+}
+
+.settingsPage h4 {
+  margin: 0 0 16px 0;
+  color: #495057;
+}
+
+.addDomain {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.addDomain input {
+  flex: 1;
+  min-width: 120px;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.addDomain input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.addDomain button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.addDomain button:hover {
+  background: #0056b3;
+}
+
+.domainConfigs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.domainConfig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.configInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.configInfo .domain {
+  font-weight: 500;
+  min-width: 120px;
+  text-align: left;
+}
+
+.configInfo .domain.disabled {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+.configInfo input {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.configInfo input:disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+}
+
+.configActions {
+  display: flex;
+  gap: 4px;
+}
+
+.configActions button {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.configActions button.enabled {
+  background: #28a745;
+  color: white;
+}
+
+.configActions button.disabled {
+  background: #6c757d;
+  color: white;
+}
+
+.configActions button.remove {
+  background: #dc3545;
+  color: white;
+}
+
+.configActions button:hover {
+  opacity: 0.8;
+}

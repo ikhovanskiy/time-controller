@@ -1,0 +1,173 @@
+.weeklyCharts {
+  margin-top: 24px;
+}
+
+.weeklyCharts h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dayChart {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dayChart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dayTitle {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.chartContainer {
+  margin-bottom: 16px;
+}
+
+.daySummary {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.totalTime {
+  margin: 0 0 12px 0;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.domainsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.domainSummary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.domainColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.domainColor0 { background-color: #8884d8; }
+.domainColor1 { background-color: #82ca9d; }
+.domainColor2 { background-color: #ffc658; }
+.domainColor3 { background-color: #ff7300; }
+.domainColor4 { background-color: #00ff00; }
+.domainColor5 { background-color: #ff00ff; }
+.domainColor6 { background-color: #00ffff; }
+.domainColor7 { background-color: #ff0000; }
+.domainColor8 { background-color: #0000ff; }
+.domainColor9 { background-color: #ffff00; }
+.domainColor10 { background-color: #800080; }
+.domainColor11 { background-color: #008080; }
+.domainColor12 { background-color: #808000; }
+.domainColor13 { background-color: #800000; }
+.domainColor14 { background-color: #008000; }
+
+.domainName {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.domainTime {
+  color: #666;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.moreDomains {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  font-size: 11px;
+  padding: 4px;
+}
+
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #999;
+  font-style: italic;
+}
+
+.noData p {
+  margin: 0;
+}
+
+.chartTooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tooltipDomain {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.tooltipTime {
+  margin: 0 0 2px 0;
+  color: #82ca9d;
+}
+
+.tooltipPercentage {
+  margin: 0;
+  color: #ffc658;
+}
+
+@media (max-width: 768px) {
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dayChart {
+    padding: 12px;
+  }
+  
+  .chartContainer {
+    height: 180px;
+  }
+}

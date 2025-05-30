@@ -1,0 +1,64 @@
+.app {
+  padding: 16px;
+  min-width: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: max-width 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.settingsBtn {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.settingsBtn:hover {
+  background: #e0e0e0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.settingsBtn:visited {
+  color: inherit;
+}
+
+.app p {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}

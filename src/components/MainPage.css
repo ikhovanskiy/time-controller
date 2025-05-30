@@ -1,0 +1,120 @@
+.domainList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.domainItem {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.domainItem:hover {
+  background: #f5f5f5;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.domainName {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.domainTime {
+  color: #007bff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.domainSessions {
+  color: #666;
+  font-size: 12px;
+}
+
+.activeSession {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.activeSession h3 {
+  margin: 0 0 12px 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.activeDomainItem {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.activeDomainItem .domainName {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.activeTime {
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sessionStatus {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.activeDomain {
+  border-color: #007bff !important;
+  background: rgba(0, 123, 255, 0.05) !important;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.activeDomain:hover {
+  background: rgba(0, 123, 255, 0.1) !important;
+}
+
+.overLimit {
+  border-color: #dc3545;
+  background: rgba(220, 53, 69, 0.05);
+}
+
+.overLimit:hover {
+  background: rgba(220, 53, 69, 0.1);
+}
+
+.limitInfo {
+  color: #6c757d;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.warningIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+}
